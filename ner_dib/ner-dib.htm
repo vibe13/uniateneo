@@ -1,0 +1,1989 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="it" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ner-dib</title>
+<style type="text/css">
+a {
+	color: #003300;
+}
+a:visited {
+	color: #003300;
+}
+a:active {
+	color: #003300;
+}
+a:hover {
+	color: #0000FF;
+}
+.style156 {
+	background-color: #FFFFFF;
+}
+.style155 {
+	text-align: center;
+}
+.style69 {
+	border-width: 0px;
+}
+.style68 {
+	color: #003300;
+	font-weight: bold;
+}
+.style157 {
+	color: #003300;
+	font-weight: bold;
+	text-align: center;
+}
+.style147 {
+	background-color: #003300;
+}
+.style158 {
+	font-family: Candara;
+	font-size: 5pt;
+	text-align: center;
+}
+.style90 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style168 {
+	text-align: center;
+	background-color: #FFFFFF;
+	font-family: Candara;
+	font-size: 10pt;
+	white-space: normal;
+}
+.style107 {
+	font-size: 10pt;
+}
+.style112 {
+	color: #800000;
+}
+.style97 {
+	color: #003300;
+}
+.style162 {
+	font-size: 5pt;
+	color: #F5F5F5;
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style85 {
+	color: #0C3C0A;
+}
+.style169 {
+	text-decoration: none;
+}
+.style170 {
+	color: #F5F5F5;
+	font-weight: bold;
+}
+.style171 {
+	font-size: 16pt;
+	font-weight: bold;
+	color: #CC0000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style173 {
+	font-size: 5pt;
+}
+.style11 {
+	color: #003300;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style13 {
+	font-weight: bold;
+}
+.style186 {
+	color: #F5F5F5;
+}
+.style201 {
+	font-size: 5pt;
+	font-weight: bold;
+	color: #F5F5F5;
+}
+.style206 {
+	background-color: #FFFF99;
+	color: #F5F5F5;
+	font-weight: bold;
+	font-size: 10pt;
+}
+.style209 {
+	color: #003300;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 9pt;
+}
+.style211 {
+	font-size: 9pt;
+}
+.style212 {
+	font-size: 9pt;
+	color: #F5F5F5;
+}
+.style213 {
+	color: #003300;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+.style216 {
+	font-size: 8pt;
+}
+.style138 {
+	color: #F5F5F5;
+}
+.style228 {
+	background-color: #FFFF99;
+}
+.style276 {
+	color: #003300;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style277 {
+	color: #800000;
+	font-size: 8pt;
+	background-color: #FFFF99;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style280 {
+	color: #F5F5F5;
+	font-weight: bold;
+	font-size: 3pt;
+}
+.style283 {
+	color: #F5F5F5;
+	font-size: 8pt;
+	background-color: #FFFF99;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style285 {
+	background-color: #FFFF99;
+	color: #F5F5F5;
+	font-weight: bold;
+	font-size: 5pt;
+}
+.style298 {
+	background-color: #FFFF99;
+	color: #F5F5F5;
+	font-weight: bold;
+	font-size: 5pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style301 {
+	font-size: 9pt;
+	color: #003300;
+	font-weight: normal;
+}
+.style302 {
+	color: #003300;
+	text-transform: uppercase;
+}
+.style304 {
+	color: #003300;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.style308 {
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: "Arial Black";
+}
+.style309 {
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: "Arial Black";
+}
+.style311 {
+	color: #003300;
+	text-transform: uppercase;
+	font-family: "Arial Black";
+}
+.style312 {
+	color: #003300;
+	font-family: "Arial Black";
+}
+.style313 {
+	font-size: 10pt;
+	color: #003300;
+	text-transform: uppercase;
+	font-family: "Arial Black";
+}
+.style314 {
+	font-size: 10pt;
+	color: #003300;
+	font-family: "Arial Black";
+}
+.style315 {
+	color: #003300;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: "Arial Black";
+}
+.style316 {
+	font-size: 8pt;
+	color: #F5F5F5;
+}
+.style317 {
+	word-spacing: -2px;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: "Arial Black";
+}
+.style300 {
+	font-family: Arial;
+}
+.style384 {
+	font-family: Arial;
+	font-size: 5pt;
+	background-color: #F5F5F5;
+}
+.style403 {
+	font-size: 5pt;
+	color: #F5F5F5;
+	background-color: #99CCFF;
+}
+.style106 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+.style400 {
+	color: #CC0000;
+	font-size: 11pt;
+	font-family: Arial;
+}
+.style401 {
+	font-size: 5pt;
+	color: #F5F5F5;
+	font-family: Arial;
+	background-color: #99CCFF;
+}
+.style402 {
+	font-family: Arial;
+	font-size: 5pt;
+	color: #F5F5F5;
+	background-color: #F5F5F5;
+}
+.style165 {
+	color: #CC0000;
+	font-size: 11pt;
+}
+.style243 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	color: #CC0000;
+	font-size: 11pt;
+}
+.style383 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	color: #99CCFF;
+	font-size: 5pt;
+}
+.style353 {
+	font-family: Arial;
+	font-size: 10pt;
+}
+.style244 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Arial;
+}
+.style297 {
+	font-size: 10pt;
+	color: #003300;
+}
+.style385 {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #003300;
+	text-align: left;
+	background-color: #99FF99;
+}
+.style395 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 11pt;
+}
+.style386 {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+.style396 {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #003300;
+	text-align: left;
+	background-color: #FFCC66;
+}
+.style295 {
+	font-family: Wingdings;
+}
+.style296 {
+	font-family: "Wingdings 3";
+}
+.style397 {
+	font-family: Arial;
+	font-size: 11pt;
+	color: #003300;
+	text-align: left;
+	background-color: #FF99FF;
+}
+.style398 {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #003300;
+	text-align: left;
+	background-color: #FFFF99;
+}
+.style404 {
+	text-align: center;
+	font-family: Candara;
+	font-size: 10pt;
+	background-color: #F5F5F5;
+	white-space: normal;
+}
+.style378 {
+	color: #FFFFFF;
+}
+.style405 {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #F5F5F5;
+	background-color: #F5F5F5;
+}
+.style118 {
+	margin-top: 0px;
+}
+.style379 {
+	font-family: "Arial Black";
+}
+.style406 {
+	background-color: #E1E1E1;
+}
+.style99 {
+	font-family: Candara;
+}
+.style458 {
+	color: #F5F5F5;
+	font-size: 10pt;
+}
+.style457 {
+	font-weight: normal;
+}
+.style459 {
+	color: #F5F5F5;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 9pt;
+}
+.style350 {
+	font-family: Arial;
+}
+.style478 {
+	background-color: #E1E1E1;
+	font-family: Arial;
+	font-size: 10pt;
+}
+.style479 {
+	background-color: #FFFFFF;
+	color: #004600;
+}
+.style476 {
+	background-color: #E1E1E1;
+	color: #F5F5F5;
+	font-family: Arial;
+	font-size: 10pt;
+}
+.style480 {
+	color: #F5F5F5;
+	text-transform: uppercase;
+	font-family: "Arial Black";
+	font-weight: bold;
+	font-size: 10pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style203 {
+	background-color: #FFFF99;
+	font-size: 10pt;
+	color: #F5F5F5;
+	font-weight: bold;
+}
+.style224 {
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.style481 {
+	font-size: 5pt;
+	color: #F5F5F5;
+	font-family: Arial;
+}
+.style497 {
+	font-family: Tahoma;
+}
+.style496 {
+	font-size: 7pt;
+	font-family: Tahoma;
+}
+.style498 {
+	font-family: Tahoma;
+	font-size: 8pt;
+}
+</style>
+</head>
+
+<body style="background-color: #003300; color: #003300;">
+
+		<table style="width: 1000px" cellspacing="0" cellpadding="5" align="center" class="style156">
+			<tr>
+				<td style="width: 90px" class="style155">
+				<a href="../default.htm">
+				<img alt="" src="../img/Logo_Uni_ateneo.jpg" width="80" height="80" class="style69" /></a></td>
+				<td style="width: 840px">
+						<p style="margin-top: 0; margin-bottom: 0" class="style155">
+						<font face="Times New Roman" size="5" class="style68">
+						Uni-A.T.E.Ne.O.<sup>®</sup> 
+						&quot;Ivana Torretta&quot;</font><p style="margin-top: 0; margin-bottom: 0" class="style157">
+						<font face="Times New Roman" size="4">Nerviano 2007</font></td>
+				<td style="width: 90px" class="style155">
+				<a target="_blank" href="http://www.comune.nerviano.mi.it/">
+				<img alt="" src="../img/Nerviano_Stemma.png" width="68" height="80" class="style69" /></a></td>
+			</tr>
+		</table>
+		<table style="width: 1000px" cellspacing="0" cellpadding="0" class="style147" align="center">
+			<tr>
+				<td class="style158">
+				<p class="style90">xxxx</p>
+				</td>
+			</tr>
+</table>
+<table style="width: 1000px" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td style="width: 200px" class="style404" valign="top">
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr class="style300">
+				<td style="width: 100px" class="style406">
+						<a href="../default.htm" class="style169">Home Page</a></td>
+				<td style="width: 100px" class="style406">
+						<a class="style169" href="../mappa.htm">Mappa</a></td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0" class="style186">
+			<tr>
+				<td style="width: 200px" class="style384">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style403">
+						<p class="style106"><strong><span class="style400">
+						Dove Siamo</span></strong></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style401">
+						<font size="2">
+							<p class="style107" style="margin-top: 0; margin-bottom: 0" align="center">
+										<font color="#003300">
+										<strong>SALA del BERGOGNONE</strong></font></p>
+						<p class="style107" style="margin-top: 0; margin-bottom: 0" align="center">
+										<font color="#003300">
+										ex Monastero degli Olivetani</font></p>
+							<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="center">
+							<font color="#003300">
+							<span style="text-decoration: none" class="style107">
+							<a target="_blank" href="http://maps.google.it/maps?f=q&amp;hl=it&amp;geocode=&amp;q=piazza+Manzoni,+14+-+Nerviano&amp;sll=41.442726,12.392578&amp;sspn=11.722816,20.478516&amp;ie=UTF8&amp;ll=45.553746,8.970707&amp;spn=0.002675,0.005&amp;t=h&amp;z=18&amp;iwloc=cent" class="style169">
+							piazza Manzoni, 14 - Nerviano</a></span></font></p>
+						</font>
+						</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style402">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style401">
+						<p class="style106"><strong><span class="style165">
+						Anno Accademico</span></strong></p>
+				<p class="style243"><strong>2014-2015</strong></p>
+						</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style401">
+							<p class="style106"><font size="2" color="#003300">
+							Sede delle lezioni</font></p>
+				<p class="style383">xxx</p>
+							</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style403">
+						<font size="2">
+							<span class="style300">
+							<p class="style107" style="margin-top: 0; margin-bottom: 0" align="center">
+										<font color="#003300">
+										<strong>SALA del BERGOGNONE</strong></font></p>
+						<p class="style107" style="margin-top: 0; margin-bottom: 0" align="center">
+										<font color="#003300">
+										ex Monastero degli Olivetani</font></span></p>
+							<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="center">
+							<font color="#003300">
+							<span style="text-decoration: none" class="style353">
+							<a target="_blank" href="http://maps.google.it/maps?f=q&amp;hl=it&amp;geocode=&amp;q=piazza+Manzoni,+14+-+Nerviano&amp;sll=41.442726,12.392578&amp;sspn=11.722816,20.478516&amp;ie=UTF8&amp;ll=45.553746,8.970707&amp;spn=0.002675,0.005&amp;t=h&amp;z=18&amp;iwloc=cent" class="style169">
+							piazza Manzoni, 14 - Nerviano</a></span></font></p>
+						</font>
+						<p class="style244"><span class="style297">oppure<br />
+						</span>
+						<font color="#003300">
+										<strong><font size="2">Oratorio 
+						Femminile</font></strong></font></p>
+							<font size="2">
+							<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="center">
+							<font color="#003300" class="style300">
+							<font color="#003300">
+							<span style="text-decoration: none" class="style107">
+							<a target="_blank" class="style169" href="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;geocode=&amp;q=Via+Toniolo,+1,+20014+Nerviano+MI&amp;sll=41.442726,12.392578&amp;sspn=20.070722,53.569336&amp;ie=UTF8&amp;hq=&amp;hnear=Via+Toniolo,+1,+20014+Nerviano+Milano,+Lombardia&amp;ll=45.556869,8.973985&amp;spn=0.001146,0.00327&amp;t=h&amp;z=19">
+							via Toniolo, 1 - Nerviano</a></span></font></font></p>
+						</font></td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style402">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style385">
+						<p class="style395"><strong>Notizie Generali</strong></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style385">
+						<p class="style386">
+						<font size="2">
+						<a class="style169" href="../not_gen/chi-siamo.htm">Chi Siamo</a><br />
+						<a target="_blank" class="style169" href="../not_gen/statuto_5-2010.pdf">
+						Statuto</a><br />
+						<a target="_blank" href="../not_gen/Regolamento.pdf" class="style169">
+						Regolamento</a><br />
+						</font><span class="style107">
+						<a class="style169" href="../not_gen/iscrizioni.htm">Iscrizioni</a></span></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style402">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style396">
+						<p class="style395"><strong>Programma dei Corsi</strong></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style396">
+						<font size="2">
+						<a class="style169" href="../prog_cor/2007-2008/2007-2008.htm">
+						2007 - 2008</a></font><br />
+				<font size="2">
+						<span class="style97">
+						<a class="style169" href="../prog_cor/2008-2009/2008-2009.htm">
+						2008 - 2009</a></span></font><br />
+				<font size="2">
+						<a class="style169" href="../prog_cor/2009-2010/2009-2010.htm">
+						2009 - 2010</a></font><br />
+				<font size="2">
+						<a href="../prog_cor/2010-2011/2010-2011.htm" class="style169">
+				2010 - 2011</a><span class="style97"><span class="style295"> </span>
+				<span class="style296">u</span><span class="style295"> </span>
+				</span>
+				<a class="style169" href="../prog_cor/2010-2011/lez_10-11/lez_10-11.htm">
+				lezioni svolte</a></font><span class="style97"><br />
+				</span>
+				<font size="2">
+						<a class="style169" href="../prog_cor/2011-2012/2011-2012.htm">2011 - 2012</a><span class="style97"><span class="style295"> </span>
+				<span class="style296">u</span><span class="style295"> </span>
+				</span>
+						<a class="style169" href="../prog_cor/2011-2012/lez_11-12/lez_11-12.htm">lezioni svolte</a></font><br />
+				<font size="2">
+						<a class="style169" href="../prog_cor/2012-2013/2012-2013.htm">2012 - 2013</a><span class="style97"><span class="style295"> </span>
+				<span class="style296">u</span><span class="style295"> </span>
+				</span>
+						<a class="style169" href="../prog_cor/2012-2013/lez_12-13/lez_12-13.htm">lezioni svolte</a></font><br />
+				<font size="2">
+						<a class="style169" href="../prog_cor/2013-2014/2013-2014.htm">2013 - 2014</a><span class="style97"><span class="style295"> </span>
+				<span class="style296">u</span><span class="style295"> </span>
+				</span>
+						<a class="style169" href="../prog_cor/2013-2014/lez_13-14/lez_13-14.htm">lezioni svolte</a></font><br />
+				<font size="2">
+						<a class="style169" href="../prog_cor/2014-2015/2014-2015.htm">2014 - 2015</a><span class="style97"><span class="style295"> </span>
+				<span class="style296">u</span><span class="style295"> </span>
+				</span>
+						<a class="style169" href="../prog_cor/2014-2015/lez_14-15/lez_14-15.htm">lezioni svolte</a></font><br />
+				<font size="2">
+						<a class="style169" href="../prog_cor/docenti/docenti.htm">Docenti</a></font></td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style402">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style397">
+						<p class="style395"><strong>
+						<a href="ner-dib.htm" class="style169">&quot;Nerviano Dibattiti&quot;</a></strong></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style481">xxxx</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td style="width: 200px" class="style398">
+						<p class="style395"><strong>
+						<a href="../varie/visite-guidate.htm" class="style169">Visite 
+						Guidate</a></strong></p>
+				</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style481">xxxx</td>
+			</tr>
+		</table>
+		<br />
+		</td>
+		<td style="width: 600px" class="style404" valign="top">
+		<span class="style162">xxx</span><span class="style170"><p style="margin-top: 0; margin-bottom: 0" class="style171">
+		&quot; Nerviano Dibattiti &quot;</p>
+		</span><span class="style13">
+		<p style="margin-top: 0; margin-bottom: 0" class="style13">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0" class="style13">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0" class="style13">&nbsp;</p>
+		<p style="margin-top: 0; margin-bottom: 0" class="style13">&nbsp;</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style277">
+									<p align="center" class="style11">
+									sabato</p>
+				<p align="center" class="style11">
+									13 ottobre 2012</p>
+				<p align="center" class="style11">
+									0re 21,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+		<span class="style186">
+									<span class="style97">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style311">
+									<span class="style13">
+									<span class="style170">
+									<span class="style173">
+									<span class="style458">
+									<span class="style312">
+									Lo splendore del &#39;300 a Siena</span></span></span></span></span></p>
+									</span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style459">
+		<span class="style173">
+				<span class="style162">
+				<span class="style99"><span class="style97">
+				<span class="style1">
+				<span class="style211">
+									<span class="style457">
+									Duccio di Boninsegna, Simone Martini,
+									Ambrogio Lorenzetti</span></span></span></span></span></span></span></p>
+						</span>
+									</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2012-10-13.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">--</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style277">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									11 ottobre 2012</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+		<span class="style186">
+									<span class="style97">
+		<span class="style138">
+									<p align="center" class="style480">
+									<strong>
+									<span class="style112">
+									<span class="style186">
+									<span class="style312">
+									I MIGLIORI ANNI DELLA NOSTRA VITA</span></span></span></strong></p>
+									</span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style459">
+									<strong>
+		<span class="style173">
+		<span class="style112">
+		<span class="style186">
+									<span class="style276">
+				<span class="style162">
+				<span class="style99"><span class="style97">
+				<span class="style1">
+				<span class="style211">
+									<span class="style457">
+									Star bene, là dove stiamo e comunque stiamo</span></span></span></span></span></span></span></span></span></span></strong></p>
+						</span>
+									</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2012-10-11.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style277">
+									<p align="center" class="style11">
+									venerdì</p>
+				<p align="center" class="style11">
+									07 ottobre 2011</p>
+				<p align="center" class="style11">
+									0re 21,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+		<span class="style186">
+									<span class="style97">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style311">
+									VINCENT VAN GOGH</p>
+									</span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style209">
+									Un grande fuoco nel cuore</p>
+						</span>
+									</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2011-10-07.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style277">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									14 aprile 2011</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+		<span class="style186">
+									<span class="style97">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style311">
+									Incontrare la Bellezza per Amare la Realtà</p>
+									</span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style209">
+									Il Beato Angelico negli Affreschi di San 
+									Marco a Firenze</p>
+						</span>
+									</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-2011_chiara-silvia.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style277">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									14 marzo 2011</p>
+				<p align="center" class="style11">
+									0re 21,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+									<span class="style97">
+		<span class="style186">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style311">
+									La Prevenzione in Oncologia</p>
+									</span>
+									<p align="center" class="style304">
+									Quando, come e perchè</p>
+									</span>
+						</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2011-03-14.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									24 febbraio 2011</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+		<span class="style112">
+									<span class="style97">
+		<span class="style186">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style311">
+									Incontrare la Bellezza per Amare la Realtà</p>
+									</span>
+									<p align="center" class="style304">
+									Cezanne, l&#39;Eroismo del Reale</p>
+									</span>
+						</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-2011_chiara-silvia.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									8 febbraio 2010</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<strong>
+									<span class="style186">
+		<span class="style112">
+									<span class="style312">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style302">
+									Incontrare la Bellezza per Amare la Realtà</p>
+									</span>
+						</span>
+				</span>
+		</span>
+		<span class="style112">
+									<span class="style276">
+		<span class="style186">
+									<p align="center" class="style209">
+									Come le Stelle del Cielo ...</p>
+									</span>
+						</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-2011_chiara-silvia.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">3</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									7 febbraio 2011</p>
+				<p align="center" class="style11">
+									0re 20,45&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style285" style="width: 430px">
+									<strong>
+		<span class="style112">
+									<span class="style97">
+									<span class="style186">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style313">
+									Uso e Abuso di Droghe</p>
+									</span></span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style209">
+									Aspetti biologici e sociali</p>
+						</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2011-02-07.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style170">
+		<span class="style173">
+				<span class="style162">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									11 novembre 2010</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style285" style="width: 430px">
+									<strong>
+		<span class="style112">
+									<span class="style97">
+		<span class="style186">
+		<span class="style138">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style313">
+									Incontrare la Bellezza per Amare la Realtà</p>
+									</span></span>
+						</span>
+									<span class="style276">
+									<p align="center" class="style209">
+									Michelangelo Scultore</p>
+						</span>
+				</span></strong>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-2011_chiara-silvia.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span></span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									14 ottobre 2010</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style314">
+									MOLTE&nbsp; MALATTIE&nbsp; NON&nbsp; FANNO&nbsp; 
+									PIU&#39;&nbsp; PAURA</p>
+									<p align="center" class="style209">
+									I successi dei trapianti d&#39;organo e di 
+									midollo osseo</p>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-10-14.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									venerdì</p>
+				<p align="center" class="style11">
+									8 ottobre 2010</p>
+				<p align="center" class="style11">
+									0re 21,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style314">
+									CARAVAGGIO</p>
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style301">
+									l&#39;urlo e la luce</p>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-10-08.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									30 marzo 2010</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style314">
+									LA&nbsp; MAESTA&#39;&nbsp; DI&nbsp; DUCCIO&nbsp; 
+									DI&nbsp; BUONINSEGNA</p>
+									<p align="center" class="style209">
+									La Madonna in trono, col Bambino, tra gli 
+									angeli e i santi della corte celeste</p>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-03-30.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									23 febbraio 2010</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style315">
+									LA&nbsp; BELLEZZA&nbsp; NELLA&nbsp; 
+									PINACOTECA&nbsp; DI&nbsp; BRERA</p>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-02-23.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									1 febbraio 2010</p>
+				<p align="center" class="style11">
+									0re 20,45&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style315">
+									INFARTO:&nbsp; COME&nbsp; TI&nbsp; AGGIUSTO&nbsp; 
+									IL&nbsp; CUORE</p>
+									</span>
+		<span class="style173">
+									<span class="style212">
+									<p align="center" class="style213">
+									Progressi e limiti della cardiologia 
+									interventistica</span><span class="style211">&nbsp;</span></p>
+									</span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2010-02-01.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									17 dicembre 2009</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style298" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style308">
+									<font color="#003300">
+									LA&nbsp; CAPPELLA&nbsp; SISTINA</font></p>
+		</span>
+		<span class="style173">
+				<span class="style162">
+									<span class="style212">
+									<p align="center" class="style213">
+									Il capolavoro di Michelangelo</span></p>
+		</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-12-17.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style298">
+		<span class="style216">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									5 novembre 2009</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0">
+									<span class="style97">0re 15,00&nbsp;</span></span><span class="style186"><span class="style97">&nbsp;</span></p>
+		</span>
+				</td>
+				<td class="style298" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style309">
+									<font color="#003300">
+									<strong>SAN&nbsp; FRANCESCO&nbsp; SECONDO&nbsp; 
+									GIOTTO</strong></font></p>
+		</span>
+		<span class="style173">
+				<span class="style162">
+									<span class="style186">
+									<span class="style212">
+									<p align="center" class="style213">
+									La vita del santo attraverso la basilica 
+									superiore di Assisi</p>
+											</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-11-05.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style298">
+				<span class="style316">
+									<p align="center" class="style11">
+									giovedì</p>
+				<p align="center" class="style11">
+									15 ottobre 2009</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 15,30</span><span class="style173"><span class="style162"><span class="style186"><span class="style97">&nbsp;</span></p>
+		</span>
+		</span></span>
+				</td>
+				<td class="style298" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									L&#39;ORIGINE&nbsp; DELL&#39;UOMO:&nbsp; da&nbsp; 
+									una&nbsp; scimmia&nbsp; o&nbsp; da&nbsp; 
+									Dio?</font></p>
+		</span>
+		<span class="style173">
+				<span class="style162">
+									<span class="style186">
+									<span class="style212">
+									<p align="center" class="style213">
+									Scienza e Fede a confronto</span></p>
+											</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-10-15.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style298">
+									<span class="style170">
+		<span class="style173">
+				<span class="style316">
+									<p align="center" class="style11">
+									venerdì</p>
+				<p align="center" class="style11">
+									2 ottobre 2009</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 15,00</span></span></span><span class="style173"><span class="style162"><span class="style186"><span class="style97">&nbsp;</span></p>
+		</span>
+		</span></span>
+				</td>
+				<td class="style298" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									IL&nbsp; VANGELO&nbsp; SECONDO&nbsp; GIOTTO</font></p>
+		</span>
+		<span class="style173">
+				<span class="style162">
+									<span class="style186">
+									<span class="style212">
+									<p align="center" class="style213">
+									La cappella degli Scrovegni</span></p>
+											</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-10-02.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									7 luglio 2009</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 21,00</p>
+				</td>
+				<td class="style298" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									PILLOLE&nbsp; DI&nbsp; SAGGEZZA</font></p>
+		</span>
+		<span class="style173">
+				<span class="style162">
+									<span class="style186">
+									<span class="style212">
+									<p align="center" class="style213">
+									Uno scienziato sotto le stelle</span></p>
+											</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-07-07.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									9 marzo 2009</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 20,30</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									IL&nbsp; DRAMMA&nbsp; DELL&#39;ALZHEIMER&nbsp; E&nbsp; 
+									DELLE&nbsp; DEMENZE</font></p>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2009-03-09.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									10 novembre 2008</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 20,45</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									LE&nbsp; NUOVE&nbsp; TERAPIE&nbsp; 
+									ANTITUMORALI</font></p>
+		<span class="style173">
+				<span class="style162">
+									<span class="style212">
+									<p align="center" class="style213">
+									Luci e ombre</p>
+		</span>
+		</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2008-11-10.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px; height: 46px;">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px; height: 46px;" class="style283">
+									<p align="center" class="style11">
+									martedì</p>
+				<p align="center" class="style11">
+									14 ottobre 2008</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 18,00</p>
+				</td>
+				<td class="style298" style="width: 430px; height: 46px;">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									L&#39;11&nbsp; SETTEMBRE&nbsp; DELLA&nbsp; 
+									SANITA&#39;&nbsp; LOMBARDA</font></p>
+		<span class="style173">
+				<span class="style162">
+									<span class="style212">
+									<p align="center" class="style213">
+									Lo scandalo della Clinica Santa Rita</p>
+		</span>
+		</span></span>
+				</td>
+				<td style="width: 20px; height: 46px;" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2008-10-14.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px; height: 46px;">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		</span>
+				<span class="style186">
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 40px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									mercoledì</p>
+				<p align="center" class="style11">
+									28 maggio 2008</p>
+				<p align="center" class="style11">
+									0re 21,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style203" style="width: 430px">
+				<span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style313">
+									<font color="#003300">
+									CINA - SGUARDI DI SPERANZA</font></p>
+		</span>
+		<span class="style173">
+				<span class="style314">
+									<p align="center" class="style224">
+									<font color="#003300">
+									La Cina contemporanea, i suoi rapporti
+									con i Cattolici</font></p>
+									<p align="center" class="style224">
+									<font color="#003300">
+									e il Mondo Occidentale</font></p>
+		</span></span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2008-05-28.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		</span>
+		</span>
+				<span class="style162">
+		<span class="style173">
+		<table style="width: 600px; height: 35px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									lunedì</p>
+				<p align="center" class="style11">
+									7 aprile 2008</p>
+				<p align="center" style="margin-top: 0; margin-bottom: 0" class="style97">
+									ore 20,45</p>
+				</td>
+				<td class="style298" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style317">
+									<font color="#003300">
+									IL&nbsp; TESTAMENTO&nbsp; BIOLOGICO</font></p>
+		<span class="style173">
+				<span class="style162">
+									<span class="style212">
+									<p align="center" class="style213">
+									Quando, come e perché servirebbe</p>
+											</span></span>
+									</span>
+				</td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2008-04-07.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style280">-----</p>
+		<span class="style173">
+		<table style="width: 600px; height: 40px;" cellspacing="0" cellpadding="2" class="style107">
+			<tr>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+				<td style="width: 120px" class="style283">
+									<p align="center" class="style11">
+									venerdì</p>
+				<p align="center" class="style11">
+									4 aprile 2008</p>
+				<p align="center" class="style11">
+									0re 15,00&nbsp;</span>&nbsp;</p>
+				</td>
+				<td class="style206" style="width: 430px">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style315">
+									<font color="#003300">
+									LA SUCCESSIONE DEI PATRIMONI</font></p>
+		</span><span class="style186">
+									<p align="center" style="margin-top: 0; margin-bottom: 0" class="style316">
+									<font color="#003300">
+									tra esigenze fiscali e di tutela legale</font></td>
+				<td style="width: 20px" class="style228">
+													<p align="center" class="style201">
+													<font color="#003300">
+													<a target="_blank" href="2008-04-04.pdf">
+													<img border="0" src="../img/reader_icon_special_1.jpg" width="15" height="15"></a></font></p>
+				</td>
+				<td style="width: 15px">
+				<p align="center"></p>
+				</td>
+			</tr>
+		</table>
+		</span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style170">-----</p>
+		</span>
+				</span></span>
+		<p style="margin-top: 0; margin-bottom: 0" class="style170">&nbsp;</p>
+		</td>
+		<td style="width: 200px" class="style168" valign="top">
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td class="style405">----</td>
+			</tr>
+		</table>
+		<table style="width: 200px" cellspacing="0" cellpadding="0">
+			<tr>
+				<td style="width: 200px" class="style402">xxxx</td>
+			</tr>
+		</table>
+		<br />
+		<br />
+					<a target="_blank" href="http://www.marionegri.it">
+					<img border="0" src="../img/amici/amici.1.gif" width="110" height="82"></a><br />
+				<br />
+					<a target="_blank" href="http://www.aisla.it/">
+					<img border="0" src="../img/amici/amici.2.jpg" width="150" height="102" class="style118"></a><br />
+				<br />
+						<img alt="" src="../img/amici/2007-300X250.gif" width="100" height="83" /><br />
+				<strong><span class="style378"><span class="style300">----</span><table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td class="style404">---</td>
+			</tr>
+		</table>
+		..</span><table style="width: 200px" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="style379">AMICI<br />
+						CHE CI SOSTENGONO&nbsp;</td>
+					</tr>
+				</table>
+				<span class="style497">
+		<br />
+				<em><br />
+				<a target="_blank" href="http://www.comune.nerviano.mi.it/">
+				<img alt="" src="../img/Nerviano_Stemma.png" width="60" height="70" class="style69" /></a><br />
+				</em>Comune di Nerviano<br />
+				<em><br />
+		<br />
+					<a target="_blank" href="http://www.gruppoict.it/">
+					<img border="0" src="../img/amici/ict.jpg" width="160" height="72"></a><br />
+				<br />
+		<br />
+		<a target="_blank" href="http://www.unipolassicurazioni.it/Pagine/Default.aspx">
+		<img alt="" src="../img/amici/unipol.jpg" width="130" height="80" class="style69" /></a></em></span><span class="style350"><p class="style90">
+					<b><font size="1" face="Tahoma"><span class="style216">ASSIservice snc<br />
+					</span>
+					<font face="Tahoma"><span style="font-size: 7pt">Ufficio: 
+					Via Roma, 56 - Nerviano (MI)</span></font></font></b></p>
+				</span>
+				<span class="style497">
+						<em><br />
+		<br />
+		<br />
+		<a target="_blank" href="http://www.fisioterapianerviano.com/">
+		<img alt="" src="../img/corti.jpg" width="162" height="52" class="style69" /></a><br />
+				</em>
+				</span>
+				<span class="style350">
+		<b><font size="1" face="Tahoma"><span class="style498">Centro 
+		Fisiokinesiterapico<br />
+					</span><span style="font-size: 7pt" class="style497">Via 
+		Papa Giovanni XXIII, 21/A<br />
+		Nerviano (MI)</span></font></b></span><span class="style496"><br />
+						<em><br />
+		<br />
+		<span class="style350">
+				<br />
+					<br />
+				<a target="_blank" href="http://www.studiodentisticobetulle.it/">
+		<img alt="" src="../img/amici/logo_betulle1.png" width="162" height="25" class="style69" /></a></span></em><br />
+		<span class="style498">
+		Studio Dentistico Betulle<br />
+				</span>
+				Piazza Toscanini, 14<br />
+		Nerviano (MI)<br />
+						<em>
+				<br />
+				<br />
+				<br />
+				<a target="_blank" href="http://www.lombardianuoto.it/">
+		<img alt="" src="../img/amici/LombardiaNuoto.jpg" width="150" height="150" class="style69" /></a><br />
+				<br />
+				<br />
+				</em>
+		</span><span class="style497">
+		<br />
+				</span>
+				<em>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+				<br />
+		<br />
+		<br />
+		<br />
+				</em><span class="style378">
+		<table style="width: 200px" cellspacing="0" cellpadding="5">
+			<tr>
+				<td class="style404">---</td>
+			</tr>
+		</table>
+		</span></strong>
+		</td>
+	</tr>
+</table>
+		<font size="2"><span class="style1">
+		<table style="width: 1000px" cellspacing="0" cellpadding="5" align="center" class="style156">
+			<tr>
+				<td style="width: 50px; height: 50px">
+				<img alt="" src="../img/Logo_Uni_ateneo.jpg" width="50" height="50" class="style69" /></td>
+				<td>
+		<font size="2"><span class="style1">
+							<p class="style350" style="margin-top: 0; margin-bottom: 0" align="center">
+							<span class="style85"><span class="style156">
+							<font class="style107">Sede e Sede Legale Via Fratelli Bandiera, 40 - 2014 Nerviano (MI)&nbsp;&nbsp; 
+							-&nbsp;&nbsp; Uffici Piazza Manzoni, 14 - 2014 Nerviano (MI)</font></span></p>
+							<p class="MsoNormal" style="margin-top: 0; margin-bottom: 0" align="center">
+							<span class="style156">
+							<font class="style353">C.F. 93537010154 - P.I. 05924010969 -
+							Cell. 331 3900424 - Fax 0331 1812314 - e-mail: </font>
+							</span></span>
+							<font color="#003300" class="style353">
+							<a href="mailto:info@uni-ateneo.it" class="style169">
+							<span class="style85"><span class="style156">info@uni-ateneo.it</span></span></a></font><span class="style300"><span class="style478"><font class="style300"><span class="style479">- 
+							PEC: </span></font></span>
+		<span class="style476">
+							<font color="#003300" class="style300">
+							<a href="mailto:uni-ateneo@legalmail.it" class="style169">
+							<span class="style156">uni-ateneo@legalmail.it</span></a></font></span></span></p>
+		</span></font>
+				</td>
+				<td style="width: 50px; height: 50px">
+		<font size="2"><span class="style1">
+				<img alt="" src="../img/Logo_Uni_ateneo.jpg" width="50" height="50" class="style69" /></span></font></td>
+			</tr>
+		</table>
+		</span></font>
+
+</body>
+
+</html>
