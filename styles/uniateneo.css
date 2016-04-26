@@ -394,6 +394,16 @@ a:hover {
 .style275 {
 	color: #CC0000;
 }
+.style323 {
+	background-color: #E1E1E1;
+	color: #F5F5F5;
+	font-size: 12pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style177 {
+	font-size: 12pt;
+}
 .style273 {
 	text-align: center;
 	font-family: Arial;
@@ -662,4 +672,8 @@ a:hover {
 .style492 {
 	font-size: 9pt;
 	color: #000000;
+}
+.style162 {
+	font-size: 5pt;
+	color: #F5F5F5;
 }
