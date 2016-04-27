@@ -122,6 +122,14 @@
 	text-align: center;
 }
 
+.dibattitiEventMainTitle {
+    color: #003300;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: "Arial Black";
+    text-transform: uppercase;
+}
+
 .style1 {
 	font-family: Arial, Helvetica, sans-serif;
 }
