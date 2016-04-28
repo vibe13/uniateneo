@@ -108,6 +108,14 @@
 	margin-bottom: 0
 }
 
+.dibattitiEventMainTitle {
+    color: #003300;
+    font-size: 12pt;
+    font-weight: bold;
+    font-family: "Arial Black";
+    text-transform: uppercase;
+}
+
 .uniAteneoTopBannerDiv {
 	background:#99CCFF;
 	font-family: Arial, Helvetica, sans-serif;
@@ -122,13 +130,11 @@
 	text-align: center;
 }
 
-.dibattitiEventMainTitle {
-    color: #003300;
-    font-size: 12pt;
-    font-weight: bold;
-    font-family: "Arial Black";
-    text-transform: uppercase;
+.noTextDecoration {
+	text-decoration: none;
 }
+
+#--------------------#
 
 .style1 {
 	font-family: Arial, Helvetica, sans-serif;
