@@ -8,9 +8,17 @@
 	width: 100%;
 }
 
-.docentiAnagraficaNome {
+.docentiAnagraficaPdf {
 	cursor: pointer;
 	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #99FF99;
+	text-align: center;
+	width: 20px;
+	height: 20px;
+}
+
+.docentiAnagraficaNome {
 	padding-right: 20px;
 	background-color: #99FF99;
 	text-align: right;
@@ -18,7 +26,6 @@
 }
 
 .docentiAnagraficaCognome {
-	cursor: pointer;
 	background-color: #99FF99;
 	text-align: left;
 	width: 25%;
@@ -26,39 +33,6 @@
 
 .docentiComune {
 	background-color: #99FF99;
-	text-align: center;
-	width: 50%;
-}
-
-.docentiGarattiniTable {
-	border-collapse: separate;
-  border-spacing: 0 4px;
-  color: #000000;
-	font-size: 11pt;
-  font-weight: bold;
-	margin-top: 8px;
-	width: 100%;
-}
-
-.docentiGarattiniNome {
-	cursor: pointer;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: #FFFF99;
-	text-align: right;
-	width: 25%;
-}
-
-.docentiGarattiniCognome {
-	cursor: pointer;
-	background-color: #FFFF99;
-	padding-left: 4px;
-	text-align: left;
-	width: 25%;
-}
-
-.docentiGarattiniComune {
-	background-color: #FFFF99;
 	text-align: center;
 	width: 50%;
 }
