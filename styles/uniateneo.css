@@ -108,6 +108,15 @@
 	text-decoration: none;
 }
 
+.footer {
+	color: #003300;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	text-align: left;
+}
+
 #--------------------#
 
 .style1 {
@@ -153,11 +162,6 @@
 }
 .style118 {
 	margin-top: 0px;
-}
-.style157 {
-	color: #003300;
-	font-weight: bold;
-	text-align: center;
 }
 .style304 {
 	text-align: center;
