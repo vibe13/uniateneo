@@ -40,6 +40,31 @@
 	  <!-- Spaziatore tra intestazione e menu -->
 	  <div style="background-color: #003300; color: #003300; height: 10px"></div>
 
+    <div style="background-color: #ffffff; ">
+
+    <table cellpadding="0" cellspacing="0" style="background-color: #ffffff; width: 100%">
+      <tr class="style1">
+        <td style="width: 35%">&nbsp;</td>
+        <td><img alt="" class="style69" height="50px" src="img/pagina_in_costruzione_crop.png" width="59px" /></td>
+        <td style="width: 30%">
+          <p style="margin-top: 0; margin-bottom: 0; text-align: center; vertical-align: middle; color: #FC4601; font-weight: bold;">
+            <font face="Times New Roman" size="3">
+              <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" direction="left" scrollamount="3">
+                &nbsp;&nbsp;Sito in fase di aggiornamento&nbsp;&nbsp;
+              </marquee>
+            </font>
+          </p>
+        </td>
+        <td><img alt="" class="style69" height="50px" src="img/pagina_in_costruzione_crop.png" width="59px" /></td>
+        <td style="width: 35%">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+
+    </div>
+    <!-- Spaziatore tra intestazione e menu -->
+    <div style="background-color: #003300; color: #003300; height: 10px"></div>
+
 	  <!-- Elementi del Menu -->
     <div id="hormenu" style="background-color: #e1e1e1; padding-top:5px;" >
       <ul><li><font size="2"><a id="home_page_id" href="#">Home Page&nbsp;</a></font></li></ul>
@@ -283,6 +308,7 @@
       $(document).ready(function() {
         $("#page_content").load("content/default.html");
       });
+      $("ul#ticker01").liScroll();
       $("#home_page_id").on("click", function(){
         $("#page_content").load("content/default.html");
       });
