@@ -113,32 +113,27 @@
     				</li>
     				<li >
     					<font size="4">
-                <strong><a id="2014_2015_corsi_id" href="#">2014&nbsp;-&nbsp;2015&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;lezioni svolte&nbsp;&nbsp;&#x2692;
-    						<!--<strong><a href="prog_cor/2014-2015/2014-2015.htm">2014&nbsp;-&nbsp;2015</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="prog_cor/2014-2015/lez_14-15/lez_14-15.htm">lezioni svolte&nbsp;</a>-->
+                <strong><a id="2014_2015_corsi_id" href="#">2014&nbsp;-&nbsp;2015&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a id="2014_2015_lezioni_id" href="#">lezioni svolte&nbsp;&nbsp;</a>
     				  </font>
     				</li>
     				<li >
     					<font size="4">
-                <strong><a id="2013_2014_corsi_id" href="#">2013&nbsp;-&nbsp;2014&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;lezioni svolte&nbsp;&nbsp;&#x2692;
-    						<!-- <strong><a href="prog_cor/2013-2014/2013-2014.htm">2013&nbsp;-&nbsp;2014</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="prog_cor/2013-2014/lez_13-14/lez_13-14.htm">lezioni svolte&nbsp;</a> -->
+                <strong><a id="2013_2014_corsi_id" href="#">2013&nbsp;-&nbsp;2014&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a id="2013_2014_lezioni_id" href="#">lezioni svolte&nbsp;&nbsp;</a>
     				  </font>
     				</li>
     				<li >
     					<font size="4">
-                <strong><a id="2012_2013_corsi_id" href="#">2012&nbsp;-&nbsp;2013&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;lezioni svolte&nbsp;&nbsp;&#x2692;
-                <!-- <strong><a href="prog_cor/2012-2013/2012-2013.htm">2012&nbsp;-&nbsp;2013</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="prog_cor/2012-2013/lez_12-13/lez_12-13.htm">lezioni svolte&nbsp;</a> -->
+                <strong><a id="2012_2013_corsi_id" href="#">2012&nbsp;-&nbsp;2013&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a id="2012_2013_lezioni_id" href="#">lezioni svolte&nbsp;&nbsp;</a>
     				  </font>
     				</li>
     				<li >
     					<font size="4">
-                <strong><a id="2011_2012_corsi_id" href="#">2011&nbsp;-&nbsp;2012&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;lezioni svolte&nbsp;&nbsp;&#x2692;
-    						<!-- <strong><a href="prog_cor/2011-2012/2011-2012.htm">2011&nbsp;-&nbsp;2012</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="prog_cor/2011-2012/lez_11-12/lez_11-12.htm">lezioni svolte&nbsp;</a> -->
+                <strong><a id="2011_2012_corsi_id" href="#">2011&nbsp;-&nbsp;2012&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a id="2011_2012_lezioni_id" href="#">lezioni svolte&nbsp;&nbsp;</a>
     				  </font>
     				</li>
     				<li >
     					<font size="4">
-                <strong><a id="2010_2011_corsi_id" href="#">2010&nbsp;-&nbsp;2011&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;lezioni svolte&nbsp;&nbsp;&#x2692;
-                <!-- <strong><a href="prog_cor/2010-2011/2010-2011.htm">2010&nbsp;-&nbsp;2011</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a href="prog_cor/2010-2011/lez_10-11/lez_10-11.htm">lezioni svolte&nbsp;</a> -->
+                <strong><a id="2010_2011_corsi_id" href="#">2010&nbsp;-&nbsp;2011&nbsp;</a></strong>&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a id="2010_2011_lezioni_id" href="#">lezioni svolte&nbsp;&nbsp;</a>
     				  </font>
     				</li>
             <li><font size="4"><strong><a id="2009_2010_corsi_id" href="#">2009&nbsp;-&nbsp;2010&nbsp;</a></strong></font></li>
@@ -152,13 +147,12 @@
     			<ul style="width: 300px">
     				<li >
     					<font size="4">
-    						<strong><!--<a class="style111" href="not_gen/statuto_5-2010.pdf" target="_blank">-->&nbsp;&nbsp;2016&nbsp;-&nbsp;2017<!--</a>--></strong>
+    						<strong>&nbsp;&nbsp;2016&nbsp;-&nbsp;2017</strong>
     					</font>
     				</li>
-    				<li >
-    					<font size="4">
-    						<!--<a class="style111" href="not_gen/statuto_5-2010.pdf" target="_blank">-->&nbsp;&nbsp;&nbsp;&nbsp;Visite Guidate&nbsp;<!--</a>-->
-    						<img alt="" src="img/reader_icon_special_1.jpg" height="12px" width="12px" />
+    				<li>
+              <font size="4">
+                <span><a href="gif/visite%20guidate%202016-2017.pdf">&nbsp;&nbsp;&nbsp;&nbsp;Visite Guidate&nbsp;<img alt="" src="img/reader_icon_special_1.jpg" height="12px" width="12px" /></a></span>
     					</font>
     				</li>
     				<li >
@@ -340,29 +334,45 @@
         $("#page_content").load("content/dibattiti.html", "f" + (Math.random()*1000000));
       });
       $("#2014_2015_corsi_id").on("click", function(){
-        $("#page_content").load("content/2014_2015.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2014_2015.html", "f" + (Math.random()*1000000));
       });
       $("#2013_2014_corsi_id").on("click", function(){
-        $("#page_content").load("content/2013_2014.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2013_2014.html", "f" + (Math.random()*1000000));
       });
       $("#2012_2013_corsi_id").on("click", function(){
-        $("#page_content").load("content/2012_2013.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2012_2013.html", "f" + (Math.random()*1000000));
       });
       $("#2011_2012_corsi_id").on("click", function(){
-        $("#page_content").load("content/2011_2012.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2011_2012.html", "f" + (Math.random()*1000000));
       });
       $("#2010_2011_corsi_id").on("click", function(){
-        $("#page_content").load("content/2010_2011.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2010_2011.html", "f" + (Math.random()*1000000));
       });
       $("#2009_2010_corsi_id").on("click", function(){
-        $("#page_content").load("content/2009_2010.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2009_2010.html", "f" + (Math.random()*1000000));
       });
       $("#2008_2009_corsi_id").on("click", function(){
-        $("#page_content").load("content/2008_2009.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2008_2009.html", "f" + (Math.random()*1000000));
       });
       $("#2007_2008_corsi_id").on("click", function(){
-        $("#page_content").load("content/2007_2008.html", "f" + (Math.random()*1000000));
+        $("#page_content").load("content/programmi_corsi/2007_2008.html", "f" + (Math.random()*1000000));
       });
+      $("#2014_2015_lezioni_id").on("click", function(){
+        $("#page_content").load("content/lezioni_corsi/lez_2014-2015.html", "f" + (Math.random()*1000000));
+      });
+      $("#2013_2014_lezioni_id").on("click", function(){
+        $("#page_content").load("content/lezioni_corsi/lez_2013-2014.html", "f" + (Math.random()*1000000));
+      });
+      $("#2012_2013_lezioni_id").on("click", function(){
+        $("#page_content").load("content/lezioni_corsi/lez_2012-2013.html", "f" + (Math.random()*1000000));
+      });
+      $("#2011_2012_lezioni_id").on("click", function(){
+        $("#page_content").load("content/lezioni_corsi/lez_2011-2012.html", "f" + (Math.random()*1000000));
+      });
+      $("#2010_2011_lezioni_id").on("click", function(){
+        $("#page_content").load("content/lezioni_corsi/lez_2010-2011.html", "f" + (Math.random()*1000000));
+      });
+
 
 			//$("#header").load("common/header.html", function( response, status, xhr ) {
       //  if ( status == "error" ) {
