@@ -117,6 +117,20 @@
 	text-align: center;
 }
 
+.cinquePerMille {
+	background:#FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+	font-size: 13pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-top:4px;
+	padding-bottom:12px;
+	text-align: center;
+}
+
 .noTextDecoration {
 	text-decoration: none;
 }
